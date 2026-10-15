@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe4ef">
+  <meta name="description" content="Un regalo de cumpleaños hecho con mucho amor.">
+  <title>Para ti, mi amor 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <header class="hero" id="inicio">
+    <div class="hero-card">
+      <p class="eyebrow">UN REGALITO HECHO CON AMOR</p>
+      <div class="cake" aria-hidden="true">🎂</div>
+      <p class="small-line">Hoy es un día muy especial...</p>
+      <h1>¡Feliz cumpleaños,<br><span id="heroName">mi niña hermosa</span>! 💗</h1>
+      <p class="hero-copy">Preparé este pequeño rinconcito para recordarte lo muchísimo que significas para mí.</p>
+      <button class="primary-btn" id="openGift">Abre tu regalito ✨</button>
+      <p class="scroll-hint">Hecho especialmente para ti · con todo mi corazón</p>
+    </div>
+    <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">♡</div>
+  </header>
+
+  <main id="surpriseContent">
+    <section class="section intro reveal">
+      <p class="eyebrow">PARA LA PERSONA MÁS ESPECIAL</p>
+      <h2>Hoy celebramos tu vida 🌷</h2>
+      <p>No quería regalarte solamente un mensaje. Quería hacerte un lugarcito al que puedas volver cuando quieras recordar lo mucho que te quiero.</p>
+    </section>
+
+    <section class="section letter-section reveal" id="carta">
+      <div class="section-icon">💌</div>
+      <p class="eyebrow">ABRE CUANDO QUIERAS LEER ALGO BONITO</p>
+      <h2>Una carta para ti</h2>
+      <p class="muted">Hay cosas que a veces no caben en un simple mensaje...</p>
+      <button class="secondary-btn" id="letterToggle" aria-expanded="false">Abrir mi carta 💗</button>
+      <article class="letter-paper hidden" id="letterPaper">
+        <p>Mi amor,</p>
+        <p>¡Feliz cumpleaños! 💗 Hoy le doy gracias a Dios por tu vida, por la persona que eres y por la oportunidad de coincidir contigo. Deseo que este nuevo año esté lleno de paz, salud, alegría y sueños que poco a poco se hagan realidad.</p>
+        <p>Quiero que nunca olvides lo valiosa que eres. Mereces sentirte querida, respetada, escuchada y acompañada. Gracias por los momentos bonitos, por las sonrisas y por cada recuerdo que seguimos construyendo.</p>
+        <p>Le pido a Dios que te guíe, te cuide y te dé sabiduría en cada paso. Que nunca te falten motivos para sonreír y personas que te recuerden lo especial que eres. Ojalá podamos seguir creciendo, aprendiendo y acercándonos a Él con amor, paciencia y respeto.</p>
+        <p>Hoy es tu día, pero para mí también es una oportunidad de celebrar el regalo que es tu vida. Espero que esta pequeña página te saque una sonrisa y te recuerde que alguien pensó en ti con muchísimo cariño.</p>
+        <p class="letter-end">Con todo mi cariño,<br><strong>tu persona especial 💞</strong></p>
+        <p class="edit-note">Puedes editar esta carta en el archivo index.html para que suene más a ti.</p>
+      </article>
+    </section>
+
+    <section class="section memories reveal" id="recuerdos">
+      <p class="eyebrow">NUESTROS MOMENTOS</p>
+      <h2>Pequeños recuerdos, mucho amor 📸</h2>
+      <p class="muted">Reemplaza estas imágenes por fotos de ustedes. Cada una puede guardar una historia.</p>
+      <div class="photo-grid">
+        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=700&q=85" alt="Pareja compartiendo un momento bonito"><figcaption>Un recuerdo para guardar ♡</figcaption></figure>
+        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=700&q=85" alt="Manos de una pareja juntas"><figcaption>Contigo, los detalles cuentan 🌷</figcaption></figure>
+        <figure class="photo-card"><img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=85" alt="Flores rosadas románticas"><figcaption>Un pedacito de nuestro mundo 💗</figcaption></figure>
+      </div>
+      <p class="tiny">Consejo: crea una carpeta llamada <strong>fotos</strong> y cambia las direcciones de las imágenes por <code>fotos/foto1.jpg</code>, <code>fotos/foto2.jpg</code> y <code>fotos/foto3.jpg</code>.</p>
+    </section>
+
+    <section class="section surprises reveal" id="sorpresas">
+      <p class="eyebrow">TRES SOBRECITOS PARA TI</p>
+      <h2>Elige una sorpresa 🎁</h2>
+      <p class="muted">Toca cada tarjeta para descubrir su mensajito.</p>
+      <div class="surprise-grid">
+        <button class="surprise-card" data-message="Tu sonrisa puede hacer más bonito un día común. Nunca dejes de compartir esa luz tan tuya. 🌷"><span>🌸</span><strong>Un recordatorio</strong><small>Toca para abrir</small></button>
+        <button class="surprise-card" data-message="Admiro muchas cosas de ti: tu forma de ser, tus detalles y todo lo que te hace única. Sigue creciendo y creyendo en ti. 💗"><span>💝</span><strong>Algo que admiro</strong><small>Toca para abrir</small></button>
+        <button class="surprise-card" data-message="Mi deseo es que construyamos algo bonito con paciencia, sinceridad, respeto y poniendo a Dios en el centro. Un día a la vez. 🙏"><span>🕊️</span><strong>Un deseo para nosotros</strong><small>Toca para abrir</small></button>
+      </div>
+      <div class="message-box hidden" id="surpriseMessage" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="section faith-section reveal" id="bendicion">
+      <div class="section-icon">🙏</div>
+      <p class="eyebrow">UNA BENDICIÓN PARA TU NUEVO AÑO</p>
+      <h2>Que Dios te acompañe siempre</h2>
+      <blockquote>“El Señor te bendiga y te guarde.”<cite>Números 6:24</cite></blockquote>
+      <p>Mi oración es que Dios cuide tu corazón, te dé fuerzas en los días difíciles, alegría en los días buenos y sabiduría para seguir su camino. Que este nuevo año de vida esté lleno de oportunidades para crecer y acercarte más a Él.</p>
+    </section>
+
+    <section class="final-section reveal">
+      <div class="final-heart">♡</div>
+      <h2>Y todavía tengo algo que decirte...</h2>
+      <p>Gracias por existir y por ser tú. Espero que hoy te sientas celebrada, querida y muy especial.</p>
+      <button class="primary-btn" id="finalButton">Un último mensajito 💌</button>
+      <p id="finalMessage" class="final-message hidden">¡Feliz cumpleaños, mi amor! Que Dios te bendiga hoy y siempre. Te mando un abrazo enorme y deseo que sonrías muchísimo en tu día. 💗🎂</p>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con cariño, especialmente para ti 💗
+    <p>Una página pequeña para alguien muy especial.</p>
+  </footer>
+
+  <div class="music-control">
+    <button id="musicButton" aria-pressed="false" title="Activar o pausar música">♫ Música: apagada</button>
+    <audio id="bgMusic" loop preload="none">
+      <!-- Añade tu archivo de música como musica.mp3 y quita el comentario de abajo -->
+      <!-- <source src="musica.mp3" type="audio/mpeg"> -->
+    </audio>
+  </div>
+
+  <div class="toast hidden" id="toast" role="status">¡Sorpresa! 💗</div>
+  <script src="script.js"></script>
+</body>
+</html>
